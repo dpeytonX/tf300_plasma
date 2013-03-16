@@ -1,0 +1,13 @@
+show_progress(0.200000, 20);
+package_extract_file("rootfs.tar.xz", "/tmp/rootfs.tar.xz");
+
+package_extract_file("install.sh", "/tmp/install.sh");
+
+show_progress(0.400000, 70);
+set_perm(0, 0, 755, "/tmp/install.sh");
+run_program("/tmp/install.sh");
+
+package_extract_file("kernel.blob", "/tmp/kernel.blob");
+write_raw_image("/tmp/kernel.blob", "staging");
+
+set_progress(1.000000);
