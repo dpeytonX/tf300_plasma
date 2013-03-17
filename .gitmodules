@@ -7,3 +7,6 @@
 [submodule "thirdparty/bootstrap"]
 	path = thirdparty/bootstrap
 	url = git://github.com/hach-que/Linux-On-TF300T
+[submodule "ThirdParty/blobpack"]
+	path = ThirdParty/blobpack
+	url = git://github.com/drwowe/BlobTools.git
