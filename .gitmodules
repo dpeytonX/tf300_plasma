@@ -1,0 +1,3 @@
+[submodule "tf300t-10.4.2.9-kernel"]
+	path = tf300t-10.4.2.9-kernel
+	url = https://github.com/eyeballer/tf300t-10.4.2.9-kernel.git
