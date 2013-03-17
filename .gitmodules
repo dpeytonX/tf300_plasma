@@ -1,6 +1,9 @@
-[submodule "tf300t-10.4.2.9-kernel"]
-	path = tf300t-10.4.2.9-kernel
-	url = https://github.com/eyeballer/tf300t-10.4.2.9-kernel.git
 [submodule "tf300tg-kernel-source"]
 	path = tf300tg-kernel-source
 	url = https://bitbucket.org/cb22/tf300tg-kernel-source
+[submodule "thirdparty/blobpack"]
+	path = thirdparty/blobpack
+	url = git://github.com/drwowe/BlobTools.git
+[submodule "thirdparty/bootstrap"]
+	path = thirdparty/bootstrap
+	url = git://github.com/hach-que/Linux-On-TF300T
