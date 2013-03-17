@@ -10,19 +10,20 @@ The idea came from cb22's ArchLinux project which successfully runs native linux
 <strong>Warning: This project is will not give a proper executable</strong>
 
 TODO:
--figure out which base distribution to use
---candidates are: Kubuntu, OpenSuse, Mer, Meego
--Start producing an initrd image. 
+-figure out which base distribution to use<br/>
+--candidates are: Kubuntu, OpenSuse, Mer, Meego<br/>
+-Start producing an initrd image. <br/>
+-Download the basysKom ISO and determine the initrd format<br/>
 
 <h2> INSTALLATION </h2>
 You will need cmake and gcc installed before beginning.
 CD into the install directory.
-Run the following
-./makekernel.sh
-./buildblobpack.sh
+Run the following<br/>
+./makekernel.sh<br/>
+./buildblobpack.sh<br/>
 ./buildmkbootimg.sh
 
-<h2> Kernel Install Optional</h2>
+<h2> Build a custom kernel (Optional)</h2>
 
 Below are the install instructions for cb22's modified ASUS Tf300t kernel.
 First get the kernel source
