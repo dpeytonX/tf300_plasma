@@ -7,12 +7,22 @@ This project aims to create a custom image for the TF300T tablet with Plasma Act
 
 The idea came from cb22's ArchLinux project which successfully runs native linux on this table.
 
+<strong>Warning: This project is will not give a proper executable</strong>
+
 TODO:
--figure out what the kernel.blob is and if a custom one is needed
 -figure out which base distribution to use
 --candidates are: Kubuntu, OpenSuse, Mer, Meego
+-Start producing an initrd image. 
 
-<h2> INSTALLATION Instructions (Kernel) </h2>
+<h2> INSTALLATION </h2>
+You will need cmake and gcc installed before beginning.
+CD into the install directory.
+Run the following
+./makekernel.sh
+./buildblobpack.sh
+./buildmkbootimg.sh
+
+<h2> Kernel Install Optional</h2>
 
 Below are the install instructions for cb22's modified ASUS Tf300t kernel.
 First get the kernel source
