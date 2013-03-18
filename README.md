@@ -7,11 +7,15 @@ This project aims to create a custom image for the TF300T tablet with Plasma Act
 
 The idea came from cb22's ArchLinux project which successfully runs native linux on this table.
 
-<strong>Warning: This project is will not give a proper executable</strong>
+To learn more about Plasma Active and Mer Linux you can visit the below sites:<br />
+<a href="plasma-active.org">Plasma Active</a><br/>
+<a href="merproject.org">Mer</a><br/>
+
+<strong>Warning: The update.zip file that is created is not yet tested.</strong>
 
 TODO:
 -figure out which base distribution to use<br/>
---candidates are: Kubuntu, OpenSuse, Mer, Meego<br/>
+--candidates are: Kubuntu, OpenSuse, Mer, Meego<br/><strong>Decided on Mer Linux from basysKom</strong>
 -Start producing an initrd image. <br/>
 -Download the basysKom ISO and determine the initrd format<br/>
 -Hach-que's initrd should be fine
