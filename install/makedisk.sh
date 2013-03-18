@@ -8,7 +8,7 @@ KERNEL_DIR=$ROOT/tf300tg-kernel-source
 cd $OPENSUSE/build
 
 echo "Preparing tarball of disk image..."
-cd disk/basys*
+cd disk/basyskom-plasma-active-three-archos-gen9-omapfb-tablet-mer-release
 
 sudo tar -cf $OPENSUSE/build/rootfs.tar .
 echo "Compressing tarball into XZ..."
