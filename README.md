@@ -23,7 +23,10 @@ CD into the install directory.
 Run the following<br/>
 ./makekernel.sh<br/>
 ./buildblobpack.sh<br/>
-./buildmkbootimg.sh
+./buildmkbootimg.sh <br />
+./makeinitrd.sh - Makes the initrd image and kernel blob<br />
+./buildos.sh - Gets the stable rootfs archive <br />
+./makedisk.sh - Builds the modified rootfs and update.zip package <br />
 
 <h2> Build a custom kernel (Optional)</h2>
 
@@ -58,7 +61,7 @@ To build the kernel which could take some time.
 <h2> Special Thanks </h2>
 I would like to thank these people who laid the foundation to start this project
 cb22 - Modified the TF300T source, made a working linux distribution with WiFI support on the tablet
-hach-que - Who's instructions I'm following to build the kernel
+hach-que - Who's instructions I'm following to build the kernel. Also, Drwowe who created the blobpack for TF300T
 
 -Others-
 XDA-developers
