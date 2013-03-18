@@ -25,11 +25,21 @@ sudo apt-get install gcc-arm-linux-gnueabi cmake qemu binfmt-support qemu-user-s
 
 CD into the install directory.
 Run the following<br/>
+
+./install.sh
+
+It will ask for your root password at certain times in order to chroot into the disk environment
+NOTE: The udpater zip is untested as of 03/17/2013
+
+The install script is composed of the following files
 ./makekernel.sh<br/>
 ./buildblobpack.sh<br/>
 ./buildmkbootimg.sh <br />
 ./makeinitrd.sh - Makes the initrd image and kernel blob<br />
 ./buildos.sh - Gets the stable rootfs archive <br />
+./preparedisk.sh - Launches the chroot environment for user custonmization, you may press exit for the default <br/>
+<small>NOTE: I could not get zypper running in my environment Ubuntu Precise/VirtualBox</small><br />
+./install_nvidia.sh - Installs the nVidia Tegra drivers. It is modified from hach-que's due to the fact that I couldn't get zypper to install rpmbuild <br />
 ./makedisk.sh - Builds the modified rootfs and update.zip package <br />
 
 <h2> Build a custom kernel (Optional)</h2>
