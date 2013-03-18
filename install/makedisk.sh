@@ -7,7 +7,7 @@ UPDATE=$ROOT/updaterzip
 cd $OPENSUSE/build
 
 echo "Preparing tarball of disk image..."
-cd disk
+cd disk/basys*
 
 sudo tar -cf ../build/rootfs.tar .
 echo "Compressing tarball into XZ..."

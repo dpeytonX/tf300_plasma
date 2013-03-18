@@ -19,6 +19,9 @@ TODO:
 
 <h2> INSTALLATION </h2>
 You will need cmake and gcc installed before beginning.
+
+sudo apt-get install gcc-arm-linux-gnueabi cmake qemu binfmt-support qemu-user-static
+
 CD into the install directory.
 Run the following<br/>
 ./makekernel.sh<br/>
