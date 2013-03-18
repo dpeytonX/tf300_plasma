@@ -22,7 +22,8 @@ cd disk/basys*
 # Ensure qemu-linux-user is installed.
 echo "edisk: Ensuring QEMU ARM layer is installed and enabled..."
 #zypper install qemu-linux-user
-$ROOT/install/qemu-binfmt-conf.sh >/dev/null 2>/dev/null
+$ROOT/install/qemu-binfmt-conf.sh 
+update-binfmts --import
 
 # Perform bind mounts.
 echo "edisk: Performing bind mounts..."
@@ -34,11 +35,15 @@ mount --bind /dev/pts dev/pts
 # Copy DNS resolution config.
 echo "edisk: Copy DNS resolution config..."
 cp /etc/resolv.conf etc/
+cp /etc/mtab etc/
+
+echo `pwd`
 
 # Enter chroot.
 echo "edisk: Entering chroot.  Enjoy!"
-qemu-arm chroot . $*
+chroot . $*
 
+rm etc/mtab
 # Disable bind mounts.
 echo "edisk: Stopping bind mounts..."
 umount -lf dev/pts

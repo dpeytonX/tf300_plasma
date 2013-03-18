@@ -3,21 +3,22 @@
 ROOT=`pwd`/..
 OPENSUSE=$ROOT/thirdparty/bootstrap/opensuse
 UPDATE=$ROOT/updaterzip
+KERNEL_DIR=$ROOT/tf300tg-kernel-source
 
 cd $OPENSUSE/build
 
 echo "Preparing tarball of disk image..."
 cd disk/basys*
 
-sudo tar -cf ../build/rootfs.tar .
+sudo tar -cf $OPENSUSE/build/rootfs.tar .
 echo "Compressing tarball into XZ..."
-cd ..
+cd $OPENSUSE/build
 rm rootfs.tar.xz
 xz -vv rootfs.tar
 # Create update ZIP.
 echo "Creating update.zip..."
 cp rootfs.tar.xz $UPDATE
-CP kernel.blob $UPDATE
+cp kernel.blob $UPDATE
 cd $UPDATE
 zip -r ../update.zip * 
 
