@@ -16,6 +16,7 @@ TODO:
 -Download the basysKom ISO and determine the initrd format<br/>
 -Hach-que's initrd should be fine
 -Use Archos 9 basysKom root fs
+-Test final update script
 
 <h2> INSTALLATION </h2>
 You will need cmake and gcc installed before beginning.
