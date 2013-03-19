@@ -14,8 +14,8 @@ To learn more about Plasma Active and Mer Linux you can visit the below sites:<b
 <strong>Warning: The update.zip file that is created is not yet working</strong>
 
 TODO:
--Debug
--Run install.sh
+-Check nvidia firmware install locations
+-Check initrd
 
 <h2> INSTALLATION </h2>
 You will need cmake and gcc installed before beginning.

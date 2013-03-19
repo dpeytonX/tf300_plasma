@@ -46,10 +46,11 @@ mount -t proc proc /mnt/proc
 mount -t sysfs sysfs /mnt/sys    
 
 mount -t devtmpfs devtmps /mnt/dev
-mkdir -p /mnt/dev/pts /mnt/dev/shm
+mkdir -p /mnt/dev/pts
+mkdir -p /mnt/run/shm
 
 mount -t devpts devpts /mnt/dev/pts
-#mount -t tmpfs tmpfs /mnt/dev/shm
+mount -t tmpfs tmpfs /mnt/run/shm
 
 umount /dev
 
