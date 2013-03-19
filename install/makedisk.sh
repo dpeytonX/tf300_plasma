@@ -10,10 +10,11 @@ cd $OPENSUSE/build
 echo "Preparing tarball of disk image..."
 cd disk/basyskom-plasma-active-three-archos-gen9-omapfb-tablet-mer-release
 
-sudo tar -cf $OPENSUSE/build/rootfs.tar .
+sudo tar -cvf ../rootfs.tar .
 echo "Compressing tarball into XZ..."
 cd $OPENSUSE/build
 rm rootfs.tar.xz
+mv disk/rootfs.tar .
 xz -vv rootfs.tar
 # Create update ZIP.
 echo "Creating update.zip..."
