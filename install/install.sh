@@ -5,7 +5,7 @@
 ./buildmkbootimg.sh
 ./buildos.sh
 ./makeinitrd.sh
-sudo ./install_nvidia.sh
+sudo ./installtf300.sh
 sudo ./preparedisk.sh
 ./makedisk.sh
 ./makeupdatezip.sh
