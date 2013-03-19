@@ -6,6 +6,7 @@
 #
 
 ROOT=`pwd`/..
+CONFIGURATION=$ROOT/configuration
 THIRDPARTY=$ROOT/thirdparty
 BOOTSTRAP=$THIRDPARTY/bootstrap
 OPENSUSE=$BOOTSTRAP/opensuse
@@ -40,6 +41,8 @@ if [ ! -d bin ]; then
     echo "STOP: /bin folder is missing from initrd!  Hard reset current repository head."
     exit 1
 fi
+
+cp $CONFIGURATION/initrd-init init
 
 # Check to ensure init exists.
 if [ ! -e init ]; then

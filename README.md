@@ -11,16 +11,11 @@ To learn more about Plasma Active and Mer Linux you can visit the below sites:<b
 <a href="plasma-active.org">Plasma Active</a><br/>
 <a href="merproject.org">Mer</a><br/>
 
-<strong>Warning: The update.zip file that is created is not yet tested.</strong>
+<strong>Warning: The update.zip file that is created is not yet working</strong>
 
 TODO:
--figure out which base distribution to use<br/>
---candidates are: Kubuntu, OpenSuse, Mer, Meego<br/><strong>Decided on Mer Linux from basysKom</strong>
--Start producing an initrd image. <br/>
--Download the basysKom ISO and determine the initrd format<br/>
--Hach-que's initrd should be fine
--Use Archos 9 basysKom root fs
--Test final update script
+-Debug
+-Run install.sh
 
 <h2> INSTALLATION </h2>
 You will need cmake and gcc installed before beginning.

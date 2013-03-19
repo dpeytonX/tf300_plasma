@@ -7,3 +7,4 @@
 sudo ./install_nvidia.sh
 sudo ./preparedisk.sh
 ./makedisk.sh
+./makeupdatezip.sh

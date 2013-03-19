@@ -20,9 +20,3 @@ xz -vv rootfs.tar
 echo "Creating update.zip..."
 cp rootfs.tar.xz $UPDATE
 cp kernel.blob $UPDATE
-cd $UPDATE
-zip -r ../update.zip * 
-
-echo "Done! update.zip can now be transferred to the device using ADB or other means."
-echo "Use ClockworkMod Recovery to install the update.zip."
-
