@@ -7,6 +7,7 @@
 ROOT=`pwd`/..
 OPENSUSE=$ROOT/thirdparty/bootstrap/opensuse
 UPDATE=$ROOT/updaterzip
+ROOTFS=plasma-active-nexus7-testing-mer-latest-2012-12-20
 
 cd $OPENSUSE/build
 
@@ -17,7 +18,7 @@ fi
 
 
 # Enter the disk directory.
-cd disk/basys*
+cd disk/$ROOTFS
 
 # Ensure qemu-linux-user is installed.
 echo "edisk: Ensuring QEMU ARM layer is installed and enabled..."
@@ -27,10 +28,12 @@ update-binfmts --import
 
 # Perform bind mounts.
 echo "edisk: Performing bind mounts..."
+mkdir dev/shm
 mount --bind /proc proc
 mount --bind /sys sys
 mount --bind /dev dev
 mount --bind /dev/pts dev/pts
+mount --bin /dev/shm dev/shm
 
 # Copy DNS resolution config.
 echo "edisk: Copy DNS resolution config..."
@@ -46,6 +49,7 @@ chroot . $*
 rm etc/mtab
 # Disable bind mounts.
 echo "edisk: Stopping bind mounts..."
+umount -lf dev/shm
 umount -lf dev/pts
 umount -lf dev
 umount -lf sys

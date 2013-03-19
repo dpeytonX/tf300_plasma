@@ -8,7 +8,10 @@
 ROOT=`pwd`/..
 OPENSUSE=$ROOT/thirdparty/bootstrap/opensuse
 UPDATE=$ROOT/updaterzip
-BASYS=$OPENSUSE/build/disk/basyskom-plasma-active-three-archos-gen9-omapfb-tablet-mer-release
+ROOTFS=plasma-active-nexus7-testing-mer-latest-2012-12-20
+BASYS=$OPENSUSE/build/disk/$ROOTFS
+
+
 cd $OPENSUSE/build
 
 if [ ! -d disk ]; then

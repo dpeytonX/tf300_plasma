@@ -4,11 +4,12 @@ ROOT=`pwd`/..
 OPENSUSE=$ROOT/thirdparty/bootstrap/opensuse
 UPDATE=$ROOT/updaterzip
 KERNEL_DIR=$ROOT/tf300tg-kernel-source
+ROOTFS=plasma-active-nexus7-testing-mer-latest-2012-12-20
 
 cd $OPENSUSE/build
 
 echo "Preparing tarball of disk image..."
-cd disk/basyskom-plasma-active-three-archos-gen9-omapfb-tablet-mer-release
+cd disk/$ROOTFS
 
 sudo tar -cvf ../rootfs.tar .
 echo "Compressing tarball into XZ..."
