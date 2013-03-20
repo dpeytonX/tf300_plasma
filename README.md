@@ -13,9 +13,13 @@ To learn more about Plasma Active and Mer Linux you can visit the below sites:<b
 
 <strong>Warning: The update.zip file that is created is not yet working</strong>
 
+<strong> Got a working installation using cb22's kernel.blob</strong>
+
 TODO:
--Check nvidia firmware install locations
 -Check initrd
+-Check kernel config
+-Connecting keyboard crashes
+Plasma Active always displays vertically, but responds horizontally
 
 <h2> INSTALLATION </h2>
 You will need cmake and gcc installed before beginning.
