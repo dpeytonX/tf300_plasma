@@ -8,7 +8,7 @@
 ROOT=`pwd`/..
 OPENSUSE=$ROOT/thirdparty/bootstrap/opensuse
 ROOTFS=plasma-active-nexus7-testing-mer-latest-2012-12-20
-URL=http://download.kde.org/unstable/active/3.0/images/nexus7/plasma-active-nexus7-testing-mer-latest-2012-12-20.tar.bz2
+URL=http://files.kde.org/plasma/active/3.0/images/nexus7/plasma-active-nexus7-testing-mer-latest-2012-12-20.tar.bz2
 
 cd $OPENSUSE/build
 if [ -e rootfs.tar.xz ] && [ "$REBUILD_DISK" != "true" ]; then

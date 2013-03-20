@@ -8,8 +8,7 @@
 ROOT=`pwd`/..
 OPENSUSE=$ROOT/thirdparty/bootstrap/opensuse
 UPDATE=$ROOT/updaterzip
-ROOTFS=plasma-active-nexus7-testing-mer-latest-2012-12-20
-BASYS=$OPENSUSE/build/disk/$ROOTFS
+BASYS=$OPENSUSE/build/disk
 
 
 cd $OPENSUSE/build
@@ -24,7 +23,7 @@ if [ $UID -ne 0 ]; then
     exit 1
 fi
 
-echo "Copying pakcages from $OPENSUSE/packages/tf300 into $ROOTFS"
+echo "Copying pakcages from $OPENSUSE/packages/tf300 into $BASYS"
 cd $OPENSUSE/packages/tf300
 
-cp -r * $BASYS
+cp -pr * $BASYS
