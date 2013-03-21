@@ -103,4 +103,6 @@ rm kernel.blob 2>/dev/null
 $mkbootimg_exec --kernel $KERNEL/zImage --ramdisk initrd.cpio.gz --output fs.out
 $blobpack_exec -s kernel.blob LNX fs.out
 
-exit 0
+# Move Kernel Blob
+cp kernel.blob $UPDATE
+
