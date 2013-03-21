@@ -7,6 +7,7 @@
 ROOT=`pwd`/..
 OPENSUSE=$ROOT/thirdparty/bootstrap/opensuse
 UPDATE=$ROOT/updaterzip
+ROOT_TEMPLATE=$ROOT/rootfs-template
 
 cd $OPENSUSE/build
 
@@ -18,6 +19,9 @@ fi
 
 # Enter the disk directory.
 cd disk
+
+rm -fr etc/X11/xorg.conf.d/*
+cp -rp $ROOT_TEMPLATE/* .
 
 # Ensure qemu-linux-user is installed.
 echo "edisk: Ensuring QEMU ARM layer is installed and enabled..."
