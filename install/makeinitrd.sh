@@ -43,7 +43,7 @@ if [ ! -d bin ]; then
 fi
 
 cp $CONFIGURATION/initrd-init init
-chmod 755 init
+sudo chmod -R 777 *
 
 # Check to ensure init exists.
 if [ ! -e init ]; then
