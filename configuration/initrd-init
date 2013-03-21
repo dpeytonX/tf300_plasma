@@ -1,6 +1,4 @@
 #!/bin/sh
-echo "hello"
-exit 0
 
 # Mount device filesystem.
 mount -t devtmpfs devtmpfs /dev
