@@ -1,4 +1,6 @@
 #!/bin/sh
+echo "hello"
+exit 0
 
 # Mount device filesystem.
 mount -t devtmpfs devtmpfs /dev
@@ -10,8 +12,8 @@ mount -t ext4 /dev/mmcblk0p8 /mnt2
 # Check if we should enter debug mode.
 
 # Mount Linux FS
-#mount -o bind /mnt2/linux /mnt
-mount -o bind /mnt2/archlinux /mnt
+mount -o bind /mnt2/linux /mnt
+#mount -o bind /mnt2/archlinux /mnt
 
 mount -t proc proc /mnt/proc 
 mount -t sysfs sysfs /mnt/sys    

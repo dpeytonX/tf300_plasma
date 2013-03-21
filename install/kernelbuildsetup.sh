@@ -6,5 +6,5 @@
 #Usage: source ./kernelbuildsetup.sh
 
 export ARCH=arm
-export CROSS_COMPILE="arm-linux-gnueabi-"
+export CROSS_COMPILE="arm-linux-gnueabihf-"
 
