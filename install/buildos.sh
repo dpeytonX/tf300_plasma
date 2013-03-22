@@ -26,5 +26,4 @@ else
     fi
 fi
 
-
-exit 0
+cd $ROOT/install

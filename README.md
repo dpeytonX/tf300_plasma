@@ -37,8 +37,8 @@ CD into the install directory and run the following<br/>
 It will ask for your root password at certain times.
 
 <img width="400" height="300" src="screenshot/03212013.jpg">
-
-<strong> The default credentials are: <strong>
+<p>
+<strong> The default credentials are: </strong>
 <pre>
 mer/mer
 root/mer
@@ -50,6 +50,7 @@ root/mer
 <li>The ARCH type is armhf, don't try to use armel when compiling (like me, google is fundamental)</li>
 </ul>
 <h2> Special Thanks </h2>
+<p>
 I would like to thank these people who laid the foundation to start this project
 cb22 - Modified the TF300T source, made a working linux distribution with WiFI support on the tablet
 hach-que - Who's instructions I'm following to build the kernel. Also, Drwowe who created the blobpack for TF300T
