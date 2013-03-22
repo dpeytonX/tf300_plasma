@@ -57,6 +57,10 @@ if [ -e ../build/initrd.cpio ]; then
     rm ../build/initrd.cpio
 fi
 #find -L . -depth -print | cpio -o > ../build/initrd.cpio
+
+rm bin
+cp -rp $ROOT/thirdparty/bootstrap/linux/initrd/bin .
+
 find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../build/initrd.cpio.gz
 
 cd ../build
