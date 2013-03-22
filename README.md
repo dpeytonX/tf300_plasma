@@ -21,31 +21,34 @@ Fix some of the display issues<br/>
 Fixed the Kernel. It requires a linaro gcc. The gcc that comes with Ubuntu does not work!
 
 <h2> INSTALLATION </h2>
+<p>
 You will need cmake and gcc installed before beginning.
+<P>
+<pre>sudo apt-get install cmake gcc </pre>
+<p>
+Additionally, you will need to install libz.so.1 if you are running an x64 machine
+<p>
+<pre>sudo apt-get install lib32z1</pre>
 
-sudo apt-get install gcc-arm-linux-gnueabi cmake qemu binfmt-support qemu-user-static
+CD into the install directory and run the following<br/>
 
-CD into the install directory.
-Run the following<br/>
+<pre>./install.sh</pre>
 
-./install.sh
-
-It will ask for your root password at certain times in order to chroot into the disk environment
-NOTE: The udpater zip is untested as of 03/17/2013
-
-The install script is composed of the following files
-./makekernel.sh<br/>
-./buildblobpack.sh<br/>
-./buildmkbootimg.sh <br />
-./makeinitrd.sh - Makes the initrd image and kernel blob<br />
-./buildos.sh - Gets the stable rootfs archive <br />
-./preparedisk.sh - Launches the chroot environment for user custonmization, you may press exit for the default <br/>
-<small>NOTE: I could not get zypper running in my environment Ubuntu Precise/VirtualBox</small><br />
-./install_nvidia.sh - Installs the nVidia Tegra drivers. It is modified from hach-que's due to the fact that I couldn't get zypper to install rpmbuild <br />
-./makedisk.sh - Builds the modified rootfs and update.zip package <br />
+It will ask for your root password at certain times.
 
 <img width="400" height="300" src="screenshot/03212013.jpg">
 
+<strong> The default credentials are: <strong>
+<pre>
+mer/mer
+root/mer
+</pre>
+
+<h2> NOTES </h2>
+<ul>
+<li>I could only get the kernel to actually run when I used the x86 version of the linaro                    gcc for arm</li>
+<li>The ARCH type is armhf, don't try to use armel when compiling (like me, google is fundamental)</li>
+</ul>
 <h2> Special Thanks </h2>
 I would like to thank these people who laid the foundation to start this project
 cb22 - Modified the TF300T source, made a working linux distribution with WiFI support on the tablet
@@ -53,3 +56,5 @@ hach-que - Who's instructions I'm following to build the kernel. Also, Drwowe wh
 
 -Others-
 XDA-developers
+Plasma Active
+Mer

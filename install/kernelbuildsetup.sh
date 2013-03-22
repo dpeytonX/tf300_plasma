@@ -9,7 +9,9 @@ ROOT=`pwd`/..
 GCC=gcc-linaro-arm-linux-gnueabihf-4.7-2012.12-20121214_linux
 
 cd $ROOT/tools
-tar -xvjf "$GCC.tar.bz2"
+if [ ! -d "$GCC" ]; then
+    tar -xvjf "$GCC.tar.bz2"
+fi
 
 export ARCH=arm
 export CROSS_COMPILE="$ROOT/tools/$GCC/bin/arm-linux-gnueabihf-"

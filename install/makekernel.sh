@@ -11,10 +11,9 @@ echo "CROSS_COMPILE prefix: $CROSS_COMPILE"
 echo ""
 echo "Copying kernel configuration to kernel source"
 
-#cp $CONFIG_DIR/kernel-config $KERNEL_DIR/.config
+cp $CONFIG_DIR/kernel-config $KERNEL_DIR/.config
 cd $KERNEL_DIR
-make cb22_defconfig
-make
+make -j9
 unset ARCH
 unset CROSS_COMPILE
 cd $ROOT/install
