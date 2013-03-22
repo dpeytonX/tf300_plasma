@@ -13,13 +13,12 @@ To learn more about Plasma Active and Mer Linux you can visit the below sites:<b
 
 <strong>Warning: The update.zip file that is created is not yet working</strong>
 
-<strong> Got a working installation using cb22's kernel.blob</strong>
 
 TODO:
--Check initrd
--Check kernel config
--Connecting keyboard crashes
-Plasma Active always displays vertically, but responds horizontally
+Fix some of the display issues<br/>
+<ul><li>Hardware Cursor?</li><li>Keyboard MousePad</li>
+</ul><br/>
+Fixed the Kernel. It requires a linaro gcc. The gcc that comes with Ubuntu does not work!
 
 <h2> INSTALLATION </h2>
 You will need cmake and gcc installed before beginning.
@@ -45,35 +44,7 @@ The install script is composed of the following files
 ./install_nvidia.sh - Installs the nVidia Tegra drivers. It is modified from hach-que's due to the fact that I couldn't get zypper to install rpmbuild <br />
 ./makedisk.sh - Builds the modified rootfs and update.zip package <br />
 
-<h2> Build a custom kernel (Optional)</h2>
-
-Below are the install instructions for cb22's modified ASUS Tf300t kernel.
-First get the kernel source
-
-git init submodule tf300tg-kernel-source
-
-Install the ARM cross compiling tools. 
-In Ubuntu the command is
-sudo apt-get install gcc-arm-linux-gnueabi
-sudo apt-get install lib-ncurses5-dev
-
-Run the kernelbuildsetup.sh script as follows
-source ./kernelbuildsetup.sh
-The extra 'source' puts the environment variables on your path
-If you run another distro, or install the arm toolchain into a non-path directory, remember to update your path variable as well
-
-Next run:
-make cb22_defconfig
-This builds a default configuration based on cb22's configuration
-
-(Optionally)
-make menuconfig
-This will bring up an ncurses screen so that you can customize your kernel
-I turned on several WiFi and USB support settings (for USB 3.0, printing, external monitor, WiFi adapter)
-
-Now run:
-make
-To build the kernel which could take some time.
+<img width="400" height="300" src="screenshot/03212013.jpg">
 
 <h2> Special Thanks </h2>
 I would like to thank these people who laid the foundation to start this project
