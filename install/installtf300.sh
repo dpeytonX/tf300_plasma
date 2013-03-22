@@ -28,7 +28,7 @@ cd $BASYS
 
 ROOT_TEMPLATE=$ROOT/rootfs-template
 sudo rm -fr etc/X11/xorg.conf.d/*
-#sudo rm -fr etc/profile.d/disablecursors.*
+sudo rm -fr etc/profile.d/disablecursors.*
 sudo cp -rp $ROOT_TEMPLATE/* .
 
 cd $ROOT/install
