@@ -13,7 +13,9 @@ echo "Copying kernel configuration to kernel source"
 
 cp $CONFIG_DIR/kernel-config $KERNEL_DIR/.config
 cd $KERNEL_DIR
+if [ ! -f "$KERNEL_DIR/arch/arm/boot/zImage" ]; then
 make -j9
+fi
 unset ARCH
 unset CROSS_COMPILE
 cd $ROOT/install

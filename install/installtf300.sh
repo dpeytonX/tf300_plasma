@@ -34,3 +34,5 @@ cd $BASYS
 ROOT_TEMPLATE=$ROOT/rootfs-template
 rm -fr etc/X11/xorg.conf.d/*
 cp -rp $ROOT_TEMPLATE/* .
+
+cd $ROOT/install

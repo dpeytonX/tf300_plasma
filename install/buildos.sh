@@ -11,6 +11,7 @@ ROOTFS=plasma-active-nexus7-testing-mer-latest-2012-12-20
 URL=http://files.kde.org/plasma/active/3.0/images/nexus7/plasma-active-nexus7-testing-mer-latest-2012-12-20.tar.bz2
 
 cd $OPENSUSE/build
+REBUILD_DISK=true
 if [ -e rootfs.tar.xz ] && [ "$REBUILD_DISK" != "true" ]; then
     echo "SKIP: Not rebuilding rootfs; it already exists (set REBUILD_DISK to force)."
 else
