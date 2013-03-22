@@ -11,8 +11,6 @@ To learn more about Plasma Active and Mer Linux you can visit the below sites:<b
 <a href="plasma-active.org">Plasma Active</a><br/>
 <a href="merproject.org">Mer</a><br/>
 
-<strong>Warning: The update.zip file that is created is not yet working</strong>
-
 
 TODO:
 Fix some of the display issues<br/>
@@ -47,7 +45,7 @@ root/mer
 <h2> NOTES </h2>
 <ul>
 <li>I could only get the kernel to actually run when I used the x86 version of the linaro                    gcc for arm</li>
-<li>The ARCH type is armhf, don't try to use armel when compiling (like me, google is fundamental)</li>
+<li>The ARCH type is armhf, don't try to use armel when compiling (like me. Google is fundamental...)</li>
 </ul>
 <h2> Special Thanks </h2>
 <p>
