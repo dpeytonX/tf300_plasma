@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT=..
+ROOT=`pwd`/..
 CONFIG_DIR=$ROOT/configuration
 KERNEL_DIR=$ROOT/tf300tg-kernel-source
 
@@ -17,3 +17,4 @@ make cb22_defconfig
 make
 unset ARCH
 unset CROSS_COMPILE
+cd $ROOT/install

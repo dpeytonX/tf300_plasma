@@ -23,7 +23,14 @@ if [ $UID -ne 0 ]; then
     exit 1
 fi
 
-echo "Copying pakcages from $OPENSUSE/packages/tf300 into $BASYS"
+echo "Copying packages from $OPENSUSE/packages/tf300 into $BASYS"
 cd $OPENSUSE/packages/tf300
 
+
 cp -pr * $BASYS
+
+cd $BASYS
+
+ROOT_TEMPLATE=$ROOT/rootfs-template
+rm -fr etc/X11/xorg.conf.d/*
+cp -rp $ROOT_TEMPLATE/* .

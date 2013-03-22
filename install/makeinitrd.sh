@@ -10,6 +10,7 @@ CONFIGURATION=$ROOT/configuration
 THIRDPARTY=$ROOT/thirdparty
 BOOTSTRAP=$THIRDPARTY/bootstrap
 OPENSUSE=$BOOTSTRAP/opensuse
+UPDATE=$ROOT/updaterzip
 
 # Create build directory if it does not exist.
 if [ ! -d $OPENSUSE/build ]; then
@@ -56,15 +57,9 @@ if [ -e ../build/initrd.cpio ]; then
     rm ../build/initrd.cpio
 fi
 #find -L . -depth -print | cpio -o > ../build/initrd.cpio
-find . -print -depth | cpio -ov > ../build/initrd.cpio
+find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../build/initrd.cpio.gz
 
 cd ../build
-
-# GZIP it.
-if [ -e initrd.cpio.gz ]; then
-    rm initrd.cpio.gz
-fi
-gzip initrd.cpio
 
 # Check to see if that worked.
 if [ ! -e initrd.cpio.gz ]; then
@@ -100,7 +95,7 @@ fi
 # Use mkbootimg to prepare the blob.
 rm fs.out 2>/dev/null
 rm kernel.blob 2>/dev/null
-$mkbootimg_exec --kernel $KERNEL/zImage --ramdisk initrd.cpio.gz --output fs.out
+$mkbootimg_exec --kernel zImage --ramdisk initrd.cpio.gz --output fs.out
 $blobpack_exec -s kernel.blob LNX fs.out
 
 # Move Kernel Blob
