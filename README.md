@@ -15,7 +15,11 @@ To learn more about Plasma Active and Mer Linux you can visit the below sites:<b
 TODO:
 Fix some of the display issues<br/>
 <ul><li>Hardware Cursor?</li><li>Keyboard MousePad</li>
+<li>Display Lock/Suspend reboots machine</li>
 </ul><br/>
+Get Wi-Fi setup<br />
+Check Bluetooth, Sound<br />
+<p>
 Fixed the Kernel. It requires a linaro arm gcc. The gcc arm cross-compiler that comes with Ubuntu does not work!
 
 <h2> INSTALLATION </h2>
