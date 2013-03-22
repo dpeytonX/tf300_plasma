@@ -8,8 +8,8 @@ This project aims to create a custom image for the TF300T tablet with Plasma Act
 The idea came from cb22's ArchLinux project which successfully runs native linux on this table.
 
 To learn more about Plasma Active and Mer Linux you can visit the below sites:<br />
-<a href="plasma-active.org">Plasma Active</a><br/>
-<a href="merproject.org">Mer</a><br/>
+<a href="http://plasma-active.org">Plasma Active</a><br/>
+<a href="http://merproject.org">Mer</a><br/>
 
 
 TODO:
