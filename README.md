@@ -35,7 +35,7 @@ CD into the install directory and run the following<br/>
 <pre>./install.sh</pre>
 
 It will ask for your root password at certain times.
-
+<p>
 <img width="400" height="300" src="screenshot/03212013.jpg">
 <p>
 <strong> The default credentials are: </strong>
