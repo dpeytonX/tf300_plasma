@@ -3,8 +3,8 @@
 ./makekernel.sh
 ./buildblobpack.sh
 ./buildmkbootimg.sh
-./buildos.sh
+sudo ./buildos.sh
 ./makeinitrd.sh
 sudo ./installtf300.sh
-./makedisk.sh
+sudo ./makedisk.sh
 ./makeupdatezip.sh
