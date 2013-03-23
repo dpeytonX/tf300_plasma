@@ -1,0 +1,17 @@
+[AC][DPMSControl]
+idleTime=360000
+
+[AC][SuspendSession]
+idleTime[$d]
+
+[Battery][DPMSControl]
+idleTime=360000
+
+[Battery][SuspendSession]
+idleTime[$d]
+
+[LowBattery][DPMSControl]
+idleTime=360000
+
+[LowBattery][SuspendSession]
+idleTime[$d]

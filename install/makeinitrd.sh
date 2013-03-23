@@ -103,5 +103,5 @@ $mkbootimg_exec --kernel zImage --ramdisk initrd.cpio.gz --output fs.out
 $blobpack_exec -s kernel.blob LNX fs.out
 
 # Move Kernel Blob
-cp kernel.blob $UPDATE
+sudo cp kernel.blob $UPDATE
 
