@@ -22,6 +22,11 @@ Check Bluetooth, Sound<br />
 <p>
 Fixed the Kernel. It requires a linaro arm gcc. The gcc arm cross-compiler that comes with Ubuntu does not work!
 
+<h2> PRE-INSTALLATION </h2>
+
+If you would just like to try it out without having to build all of this, you can visit the following link 
+<a href="http://iamboke.blogspot.com/2013/03/plasma-active-mer-on-asus-transformer.html">here</a> and click on update.zip to be re-directed to the download server.
+
 <h2> INSTALLATION </h2>
 <p>
 You will need cmake and gcc installed before beginning.
