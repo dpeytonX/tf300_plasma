@@ -1,0 +1,7 @@
+[kdestable]
+name=kdestable
+enabled=1
+autorefresh=0
+baseurl=http://repo.merproject.org/obs/kde:/stable:/apps/kde_stable_ux_latest_armv7hl
+type=rpm-md
+gpgcheck=0

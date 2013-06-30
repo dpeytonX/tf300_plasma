@@ -1,0 +1,7 @@
+[ce-utils]
+name=ce-utils
+enabled=1
+autorefresh=0
+baseurl=http://repo.merproject.org/obs/mer-tools:/stable/latest_armv7hl/
+type=rpm-md
+gpgcheck=0

@@ -1,0 +1,7 @@
+[mer-core]
+name=mer-core
+enabled=1
+autorefresh=0
+baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/packages/
+type=rpm-md
+gpgcheck=0

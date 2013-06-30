@@ -1,0 +1,7 @@
+[adaptation-tegra3-nexus7]
+name=adaptation-tegra3-nexus7
+enabled=1
+autorefresh=0
+baseurl=http://repo.merproject.org/obs/nemo:/devel:/hw:/nv:/tegra3:/nexus7/latest_armv7hl/
+type=rpm-md
+gpgcheck=0

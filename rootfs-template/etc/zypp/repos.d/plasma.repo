@@ -1,0 +1,7 @@
+[plasma]
+name=plasma
+enabled=1
+autorefresh=0
+baseurl=http://repo.merproject.org/obs/kde:/stable:/ux/latest_armv7hl/
+type=rpm-md
+gpgcheck=0

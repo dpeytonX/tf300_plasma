@@ -1,0 +1,7 @@
+[mer-shared]
+name=mer-shared
+failovermethod=priority
+baseurl=http://repo.pub.meego.com/CE:/MW:/Shared/Mer_Core_armv7hl/
+gpgcheck=0
+enabled=0
+

@@ -1,0 +1,7 @@
+[mer-core-debuginfo]
+name=mer-core-debuginfo
+enabled=1
+autorefresh=0
+baseurl=http://releases.merproject.org/releases/latest/builds/armv7hl/debug/
+type=rpm-md
+gpgcheck=0
