@@ -54,8 +54,22 @@ root/mer
 <h2> NOTES </h2>
 <ul>
 <li>I could only get the kernel to actually run when I used the x86 version of the linaro                    gcc for arm</li>
-<li>The ARCH type is armhf, don't try to use armel when compiling (like me. Google is fundamental...)</li>
+<li>The ARCH type is armhf, don't try to use armel when compiling...</li>
 </ul>
+
+<h2> UPGRADE 06/30/2013</h2>
+If you have been getting repo errors, or you are installing from scratch, you will need to upgrade to get the latest updates.
+Unfortunately, it's not such a painless process.
+If you already have a plasma-active instance running on your tablet, make sure you copy your /etc/X11/xorg.conf.d folder to your home directory.
+<p>
+I would recommend first connecting and storing the password to a local Wi-Fi network. Then doing a <code>zypper ref</code> then removing the kde-workspace package with <code>zypper remove kde-workspace</code>.
+Afterwords make sure you <code>zypper in</code> plasma-active, plasma-mobile, contour, kde-workspace. Then proceed to do a <code>zypper dup</code>.
+<p>
+If it reboots after upgrade (mine did), then you will notice that it reverts to the rotated screen after boot. This will be easiest to fix if you have auto-connected to a local Wi-Fi network prior to upgrade, since you can SSH into your tablet.
+<p>
+Once you remotely login, copy the folder xorg.conf.d from your home directory into your /etc/X11/xorg.conf.d. Then remove tegra.conf and 10-rotate-screen.conf. I suggest a reboot either through the console or by using the Power button + Vol. Down keys. 
+</p>
+
 <h2> Special Thanks </h2>
 <p>
 I would like to thank these people who laid the foundation to start this project
