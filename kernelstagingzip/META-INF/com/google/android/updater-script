@@ -1,0 +1,6 @@
+show_progress(0.200000, 20);
+
+package_extract_file("kernel.blob", "/tmp/kernel.blob");
+write_raw_image("/tmp/kernel.blob", "staging");
+
+set_progress(1.000000);
